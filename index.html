@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <title>Title</title>
+
+    <!-- StyleSheets -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.0/angular.js"></script>
+    <script src="scripts/app.js"></script>
+
 </head>
-<body>
+
+<body ng-app="axeish">
+
+
+{{10 +20}}
 Hello World !!
+
+<div ng-controller = "myctrl">{{message.Dob}}</div>
+
 </body>
 </html>
