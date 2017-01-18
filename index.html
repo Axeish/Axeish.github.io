@@ -7,8 +7,10 @@
 
     <!-- StyleSheets -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-
+    <link rel="stylesheet" href="styles/social.css">
     <!--Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -16,13 +18,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>
     <script src="app.js"></script>
     <script src="scripts/config.js"></script>
+    <script src="scripts/scrollstick.js"></script>
+
+
 
 </head>
 
 <body >
 
-
-<div class="navbar navbar-inverse navbar-static" id ="my-navbar">
+<header>
+    <h1>Ashish Kumar</h1>
+    <nav>
+        <a href="#/" onclick ="return myfuncrev()">Axeish</a>
+        <a href="#/resume" onclick ="return myfunc()">Resume</a>
+        <a href="#/art" onclick ="return myfunc()">Gallery</a>
+        <a href="#/" onclick ="return myfunc()">Contact</a>
+    </nav>
+</header>
+<!--<div class="navbar navbar-inverse navbar-static-top" id ="my-navbar">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -36,18 +49,24 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href='#/resume'>Resume</a>
                 <li><a href='#/art'>Art</a>
-                <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                &lt;!&ndash;<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            --></ul>
+            &ndash;&gt;</ul>
         </div>
     </div>
-</div>
+</div>-->
+
 <div ng-view>
-<!-- Jumbotron -->
+
 
 
 
 
 </div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+
+    <p>Ashish Kumar Creation </p>
+</footer>
 </body>
 </html>
