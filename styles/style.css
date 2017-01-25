@@ -1,10 +1,10 @@
 
-
 body {
     background-color: #dce0e1;
     font-family: helvetica, arial, sans-serif;
     font-size: 16px;
     padding-top: 330px;
+    min-height: 980px;
 }
 
 header {
@@ -128,3 +128,8 @@ body.sticky-header header h1 {
     border-radius: 10px;
 }
 
+.footer{
+    font-size: 10px;
+    color:white;
+    padding: 25px;
+}
