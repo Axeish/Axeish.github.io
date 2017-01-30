@@ -5,6 +5,8 @@
     transition: all 0.35s;
     -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
     transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    color:#fff;
+
 }
 .social-btns .btn:before {
     top: 90%;
@@ -119,4 +121,26 @@
     box-shadow: 0 5px 15px -5px rgba(0,0,0,0.5);
     opacity: 0.99;
     padding: 0px 0px;
+}
+
+.navbttn{
+    color: #fff;
+    background-color: #000;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    margin: 0 3px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25%;
+    border-width: 0px;
+    border-color: #3498db;
+    box-shadow: 0 5px 15px -5px rgba(0,0,0,0.5);
+    opacity: 0.99;
+    padding: 0px 0px;
+}
+
+.navbttn .fa{
+    font-size: 2.5em;
 }
