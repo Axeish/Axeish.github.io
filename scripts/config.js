@@ -17,7 +17,9 @@
                 .when("/art",
                     {
                         templateUrl: "views/art/art.html",
-                        controller: "ArtController"
+                        controller: "ArtController",
+                        controllerAs: 'ctrl'
+
                     })
         })
     })();

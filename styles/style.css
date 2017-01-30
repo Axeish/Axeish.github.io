@@ -14,7 +14,7 @@ header {
     text-align: center;
     position: relative;
     position: fixed;
-    z-index:100000;
+    z-index:1049;
     top: 0;
     overflow: hidden;
     -moz-transition: all 0.5s ease;
@@ -140,3 +140,4 @@ body.sticky-header header h1 {
     color:white;
     padding: 25px;
 }
+

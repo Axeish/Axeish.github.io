@@ -1,120 +1,108 @@
 <div class="container-fluid">
-<
-    <div class="row w3-white w3-text-grey w3-card-4">
-        UNDER CONSTRUCTION (PLease Wait ....)
-    </div>
-  <br>
-    <div class="row w3-white w3-text-grey w3-card-4">
-        <div class="resheader">
-            <a class="btn facebook" href="http://www.facebook.com/ashishkrdiary"><i class="fa fa-facebook"></i></a>
-            <a class="btn Tumblr" href="http://www.quilbee.tumblr.com "><i class="fa fa-tumblr"></i></a>
+    <section >
+        <div class="row">
+            <div class="col-sm-3"><button type="button" class="btn btn-primary" ng-click="ctrl.open('myModalContent.html')">Artist Journey</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-primary" ng-click="ctrl.listctrl('f')">Folkish</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-primary" ng-click="ctrl.listctrl('q')">Quill</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-primary" ng-click="ctrl.listctrl('A')">AllArt</button></div>
+
+        </div>
+           <!-- <div class = "col-xs-4 w3-white">            <div ng-show="ctrl.selected">Currently Viewed: {{ ctrl.selected }}</div>
+                <div class="modal-parent"></div></div>-->
+        <!--
+            <div class="resheader"><a class="btn github" href="http://www.github.com/axeish"><i class="fa fa-github"></i></a>
+                <a class="btn linkedin" href="http://www.linkedin.com/in/axeish "><i class="fa fa-linkedin"></i></a>
+            </div>
+        -->
+    </section>
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title" >Art</h3>
+        </div>
+        <div class="modal-body" >
+            <p>
+                Fascinated by an ability to create a world of my own, Art is something I do in my free time.
+            </p>
+            <p> I am a self taught artist and still learning. Here i have shared most of my works including sketches,
+                digital vector art, digital painting, traditional painting as well as my quilling paper cut craftworks.
+            RIght now mainly focussing on creating graphics for web as well as learnign anatomy for digital painitng.
+            </p>
+            <p>
+                Inspiration: I have been lot inspired by instagram/tumblr artists. There is lot of talents all around.
+                I will put refernece links soon.
+            </p>
+
+
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="ctrl.ok()">OK</button>
+            <button class="btn btn-warning" type="button" ng-click="ctrl.cancel()">Cancel</button>
+        </div>
+    </script>
+
+
+
+    <br>
+    <!-- Scripts-->
+    <script type="text/ng-template" id="Artmodal.html">
+        <div class="modal-header">
+            <h3 class="modal-title" >
+              {{ctrl.arttitle}}
+            </h3>
+        </div>
+        <div class="modal-body w3-black" >
+            <ul><!--
+                <li ng-repeat="item in ctrl.artitems">
+                    <a href="#" ng-click="$event.preventDefault(); ctrl.selected.item = item">
+                        {{ctrl.id}}
+
+                        <img src="{{ ctrl }}"></a>
+
+                </li>-->
+                <button id="prev" class="navbttn" ng-click="ctrl.prev()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
+                <img id="show" src="{{ctrl.artitems[ctrl.id]}}" >
+                <button id="next" class="navbttn" ng-click="ctrl.next()"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+
+            </ul>
+
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="ctrl.ok()">Close</button>
+            <button class="btn btn-warning" type="button" ng-click="ctrl.cancel()">Cancel</button>
+        </div>
+    </script>
+
+    <br>
+    <div  class="row w3-black w3-text-grey w3-card-4 hj">
+
+                <div  class = " col-sm-4 nopadding" ng-repeat="x in ctrl.artitems">
+                    <div class=" frame-square " ng-click="ctrl.open('Artmodal.html',$index)">
+                        <div class="crop">
+
+                        <img class="art" src={{x}}>
+                    </div>
+                    </div>
+                </div>
+        <div  class = " col-sm-4 nopadding" ng-repeat="x in ctrl.artitems">
+            <div class=" frame-square " ng-click="ctrl.open('Artmodal.html',$index)">
+                <div class="crop">
+
+                    <img class="art" src={{x}}>
+                </div>
+            </div>
+        </div>
+        <div  class = " col-sm-4 nopadding" ng-repeat="x in ctrl.artitems">
+            <div class=" frame-square " ng-click="ctrl.open('Artmodal.html',$index)">
+                <div class="crop">
+
+                    <img class="art" src={{x}}>
+                </div>
+            </div>
         </div>
     </div>
 
     <br>
-    <div class="row w3-white w3-text-grey w3-card-4">
-        <div class="col-sm-4"><img class="art" src="https://lh3.googleusercontent.com/kvnKsSa2mcEm3k7cLp8YtEl_OazKgKBK-Gt0DEKJqaog6SnyYTgRptsDzJE8zEVe_0hvxNZNeV-JSxEasvN04VCeh4g3BVFOewjQvLeUTUbMc-JdR9b4c-oYhsc9K4SOoDRZQQ   ">
-        </div>
-        <div class="col-sm-8">
-            <div class="row">
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/ijh9-mtB3u_HS_T0XdxV0xW2Jm-HRCJClVVl4pWyLXK2S5XXthyBLZ4wN6F3TpBqZZPGk0iVTdIOiapjzszk-NXayGmj3jg_9rK55xALAXDqPRHRVCwfZkRBCuhtClPFHmKAUA">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/038MSse9t2z7KfdBgR0boSBtnamRXdMYE_2LopCH6ZTs2bYwh1GsUL-qlziL5qRyJ9CGd-1Ge8LOJo8ApXG9NQqBx74bxrOTJvSGEm9Cu0PbD0wiamqU0enighGehm3um8Ea-A ">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/ROiAibG8v-8JWed309oMfw8NHeDwelgG4PJg5wwJYUfQABUHYEes7Kih1cI3VTRju9B14u2PFcepSZq2xbggqPRGL1xjQpeO6Ie9LwlzeVMYiWTZk8EQmYtIKxzcGb0gKiDBjw">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/nbSZuGJaz9qFT3yHjxiJX_xn8E-BSDLjW4AW30Jhl8xPNRhB6tejVA0p6l4dRnN_Ro2fardehh5hDPAr4aM11mCv58epqEPcIqtW4QXyMiI-kFO7lI3Lc_wHPKjS3L8Cdxlxgw ">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/ZH0vDhMtfN5p5BkkG42QH4dJSaS1UyVAMXxv8xbZtXM2HF_eSCn5ZnTkI-vGYMZlwDHCnCVz6dzzRd3k-CZoGW6G5ZFkJhvG2aU9Q76h-7zrVFemuoHWqQgGd_f_KPw8IVc4Bg ">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/ZxG6kCDQZse_qb06keXXX-Jk3iUOiIHVtVIGPwtzn1OXak3AH8iBOkEZ-nqTQjEe0V-L-y1jBx8qMFK5lMJPG_TBaeQHCXur5htzaPAdeA4Vux11PLgWW4xnCD0i975mPICY3g  ">
-                </div>
 
 
-            </div>
-            <div class="row">
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/HgIK56ezr_c5836s5B-jNymT8shZImmisxYxxabPh9cubYpClU3xstxC64QG33lehRMbOio_SPNPBa9bqLM1bucb_z6yFtjsZyjjfB4bl8JW4PO_2BLB6ZqadDQBJvYtGgEeRg ">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/CfVZR3rRZ3o1N5_dBnjXSV1UzU7oN3p7gywLfQ6yZnEoWe_Ky3WZC_c-804JbIkX-Q7HOmYseIw1K872L8D9oc31eEBRHnvyFCiVnn8BNo30nJhe6yqSOwtrrrzYJaBTbzdFSg  ">
 
-
-                </div>
-
-            </div>
-            <div class="row">
-
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/gt-stuRen3s9nKsQufTXRL-pc4LWGgo7B3ux3wRbpYEjEpXhi0N7WjvEzWO0ELpOGMHe6h5fWEDbZh8af82pT2AX5Rd6lTXHIrNvVGhr5KFsexrt-aUIr5jZNIwvaGaX76BskQ  ">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/gt-stuRen3s9nKsQufTXRL-pc4LWGgo7B3ux3wRbpYEjEpXhi0N7WjvEzWO0ELpOGMHe6h5fWEDbZh8af82pT2AX5Rd6lTXHIrNvVGhr5KFsexrt-aUIr5jZNIwvaGaX76BskQ  ">
-                </div>
-
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/gt-stuRen3s9nKsQufTXRL-pc4LWGgo7B3ux3wRbpYEjEpXhi0N7WjvEzWO0ELpOGMHe6h5fWEDbZh8af82pT2AX5Rd6lTXHIrNvVGhr5KFsexrt-aUIr5jZNIwvaGaX76BskQ  ">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/gt-stuRen3s9nKsQufTXRL-pc4LWGgo7B3ux3wRbpYEjEpXhi0N7WjvEzWO0ELpOGMHe6h5fWEDbZh8af82pT2AX5Rd6lTXHIrNvVGhr5KFsexrt-aUIr5jZNIwvaGaX76BskQ  ">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/gt-stuRen3s9nKsQufTXRL-pc4LWGgo7B3ux3wRbpYEjEpXhi0N7WjvEzWO0ELpOGMHe6h5fWEDbZh8af82pT2AX5Rd6lTXHIrNvVGhr5KFsexrt-aUIr5jZNIwvaGaX76BskQ  ">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/gt-stuRen3s9nKsQufTXRL-pc4LWGgo7B3ux3wRbpYEjEpXhi0N7WjvEzWO0ELpOGMHe6h5fWEDbZh8af82pT2AX5Rd6lTXHIrNvVGhr5KFsexrt-aUIr5jZNIwvaGaX76BskQ  ">
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <br>
-
-    <div class="row w3-white w3-text-grey w3-card-4">
-
-        <div class="col-sm-4"><img class="art" src="https://lh3.googleusercontent.com/6KZIxpaJiinEbIcCeWkAirrUFHwmy-LYzVN-pg491MU9jXrzit-JxRK-Nwjohdus34weVhGG5AcfiQ6z8NaZNbq3VG6T7VJFsVFSrqBYEUoFEoN0ymTmaLx5RoP3yCUOIvpqXA ">
-        </div>
-        <div class="col-sm-8">
-            <div class="row">
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/h9W4EA0ciMKbabtEItANwQzqBaIVdxg0zJ5ilr_rv93rJHWyvaE-wIflUV3kgcRUD2s3O68qoYaMFaF09M30neoS98q_BWypPCQwpW08zBXk9b6H3FKSBVsb9KlORuAZgq1EEQ ">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/h9W4EA0ciMKbabtEItANwQzqBaIVdxg0zJ5ilr_rv93rJHWyvaE-wIflUV3kgcRUD2s3O68qoYaMFaF09M30neoS98q_BWypPCQwpW08zBXk9b6H3FKSBVsb9KlORuAZgq1EEQ ">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/v7Vs1nZQRj8JAqTJxNhBb04ufBJdYVvEIxY49XsbkxePrniI1sdP04pmXUjvQm5TM1-YErvYpKR5-PJUbKRITcWsAj_1RHCke72qxF2paDqyNfnJadODsOV8IyPxma5jCT43jg  ">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/6KZIxpaJiinEbIcCeWkAirrUFHwmy-LYzVN-pg491MU9jXrzit-JxRK-Nwjohdus34weVhGG5AcfiQ6z8NaZNbq3VG6T7VJFsVFSrqBYEUoFEoN0ymTmaLx5RoP3yCUOIvpqXA ">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/UBiGugpUh-2XmmSBIVb3Yn-H9F0OItbaFp5QvTBLcgZ7yEAfIZZ6dXMtqn9PMAoncgeBUmr_RKD5C335lnlyhr2_QjXu7cTUc19A2icvLPqs1i5A6YYwsBCFStL5bLxt73UKUw  ">
-
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/gt-stuRen3s9nKsQufTXRL-pc4LWGgo7B3ux3wRbpYEjEpXhi0N7WjvEzWO0ELpOGMHe6h5fWEDbZh8af82pT2AX5Rd6lTXHIrNvVGhr5KFsexrt-aUIr5jZNIwvaGaX76BskQ  ">
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/gt-stuRen3s9nKsQufTXRL-pc4LWGgo7B3ux3wRbpYEjEpXhi0N7WjvEzWO0ELpOGMHe6h5fWEDbZh8af82pT2AX5Rd6lTXHIrNvVGhr5KFsexrt-aUIr5jZNIwvaGaX76BskQ  ">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/gt-stuRen3s9nKsQufTXRL-pc4LWGgo7B3ux3wRbpYEjEpXhi0N7WjvEzWO0ELpOGMHe6h5fWEDbZh8af82pT2AX5Rd6lTXHIrNvVGhr5KFsexrt-aUIr5jZNIwvaGaX76BskQ  ">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/gt-stuRen3s9nKsQufTXRL-pc4LWGgo7B3ux3wRbpYEjEpXhi0N7WjvEzWO0ELpOGMHe6h5fWEDbZh8af82pT2AX5Rd6lTXHIrNvVGhr5KFsexrt-aUIr5jZNIwvaGaX76BskQ  ">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/gt-stuRen3s9nKsQufTXRL-pc4LWGgo7B3ux3wRbpYEjEpXhi0N7WjvEzWO0ELpOGMHe6h5fWEDbZh8af82pT2AX5Rd6lTXHIrNvVGhr5KFsexrt-aUIr5jZNIwvaGaX76BskQ  ">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/gt-stuRen3s9nKsQufTXRL-pc4LWGgo7B3ux3wRbpYEjEpXhi0N7WjvEzWO0ELpOGMHe6h5fWEDbZh8af82pT2AX5Rd6lTXHIrNvVGhr5KFsexrt-aUIr5jZNIwvaGaX76BskQ  ">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/gt-stuRen3s9nKsQufTXRL-pc4LWGgo7B3ux3wRbpYEjEpXhi0N7WjvEzWO0ELpOGMHe6h5fWEDbZh8af82pT2AX5Rd6lTXHIrNvVGhr5KFsexrt-aUIr5jZNIwvaGaX76BskQ  ">
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/gt-stuRen3s9nKsQufTXRL-pc4LWGgo7B3ux3wRbpYEjEpXhi0N7WjvEzWO0ELpOGMHe6h5fWEDbZh8af82pT2AX5Rd6lTXHIrNvVGhr5KFsexrt-aUIr5jZNIwvaGaX76BskQ  ">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/gt-stuRen3s9nKsQufTXRL-pc4LWGgo7B3ux3wRbpYEjEpXhi0N7WjvEzWO0ELpOGMHe6h5fWEDbZh8af82pT2AX5Rd6lTXHIrNvVGhr5KFsexrt-aUIr5jZNIwvaGaX76BskQ  ">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/gt-stuRen3s9nKsQufTXRL-pc4LWGgo7B3ux3wRbpYEjEpXhi0N7WjvEzWO0ELpOGMHe6h5fWEDbZh8af82pT2AX5Rd6lTXHIrNvVGhr5KFsexrt-aUIr5jZNIwvaGaX76BskQ  ">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/gt-stuRen3s9nKsQufTXRL-pc4LWGgo7B3ux3wRbpYEjEpXhi0N7WjvEzWO0ELpOGMHe6h5fWEDbZh8af82pT2AX5Rd6lTXHIrNvVGhr5KFsexrt-aUIr5jZNIwvaGaX76BskQ  ">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/gt-stuRen3s9nKsQufTXRL-pc4LWGgo7B3ux3wRbpYEjEpXhi0N7WjvEzWO0ELpOGMHe6h5fWEDbZh8af82pT2AX5Rd6lTXHIrNvVGhr5KFsexrt-aUIr5jZNIwvaGaX76BskQ  ">
-                </div>
-                <div class="col-xs-2"><img class="art" src="https://lh3.googleusercontent.com/gt-stuRen3s9nKsQufTXRL-pc4LWGgo7B3ux3wRbpYEjEpXhi0N7WjvEzWO0ELpOGMHe6h5fWEDbZh8af82pT2AX5Rd6lTXHIrNvVGhr5KFsexrt-aUIr5jZNIwvaGaX76BskQ  ">
-                </div>
-
-            </div>
-        </div>
-    </div>
+</div>

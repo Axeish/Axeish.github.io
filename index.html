@@ -9,6 +9,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/social.css">
     <link rel="stylesheet" href="styles/artist.css">
@@ -18,10 +19,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.4.0.js"></script>
     <script src="app.js"></script>
     <script src="scripts/config.js"></script>
     <script src="scripts/scrollstick.js"></script>
-
+    <script src="views/art/art.controller.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="_services/modal.service.js"></script>
+    <script src="_directives/modal.directive.js"></script>
 
 
 </head>
@@ -33,7 +40,7 @@
     <nav>
         <a href="#/" onclick ="return myfuncrev()">Axeish</a>
         <a href="#/resume" onclick ="return myfunc()">Resume</a>
-       <!-- <a href="#/art" onclick ="return myfunc()">Art Gallery</a>-->
+        <a href="#/art" onclick ="return myfunc()">Art Gallery</a>
 
     </nav>
 </header>

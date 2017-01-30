@@ -1,3 +1,61 @@
 .art{
-    width:100%;
+
+
+}
+
+
+.modal-content {
+    top: 160px;
+}
+.modal-body{
+    text-align: center;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+
+.hj{
+    text-align: center;
+}
+.frame-square{
+
+    /* height: 250px; */
+    background: #fff;
+    border: 2px solid #000;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    height: 251px;
+    width: 100%;
+    margin-right: .5em;
+    margin-bottom: .3em;
+}
+
+
+.crop {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.crop img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    margin: auto;
+    position: absolute;
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
+}
+
+
+
+small {
+    display: block;
+    font-weight: normal;
+    opacity: .8;
 }

@@ -1,4 +1,4 @@
-angular.module("Axeish",["ngRoute"])
+angular.module("Axeish",['ngRoute','ngAnimate', 'ngSanitize', 'ui.bootstrap'])
 
 
 /*
@@ -28,9 +28,7 @@ angular.module("Axeish",["ngRoute"])
         .controller("ResumeController",function($scope){
             $scope.message = "askol";
         })
-        .controller("ArtController",function($scope){
-            $scope.message ="art askol";
-        })
+
         .controller("Appcontroller",function($scope){
             var myprofile = {
                 firstname: "Ashish",
