@@ -1,10 +1,11 @@
 <div class="container-fluid">
     <section >
         <div class="row">
-            <div class="col-sm-3"><button type="button" class="btn btn-primary" ng-click="ctrl.open('myModalContent.html')">Artist Journey</button></div>
-            <div class="col-sm-3"><button type="button" class="btn btn-primary" ng-click="ctrl.listctrl('f')">Folkish</button></div>
-            <div class="col-sm-3"><button type="button" class="btn btn-primary" ng-click="ctrl.listctrl('q')">Quill</button></div>
-            <div class="col-sm-3"><button type="button" class="btn btn-primary" ng-click="ctrl.listctrl('A')">AllArt</button></div>
+            <div class="col-sm-4"><button type="button" class="btn btn-primary" ng-click="ctrl.open('myModalContent.html')">Artist Journey</button></div>
+            <div class="col-sm-2"><button type="button" class="btn btn-primary" ng-click="ctrl.listctrl('f')">Folkish</button></div>
+            <div class="col-sm-2"><button type="button" class="btn btn-primary" ng-click="ctrl.listctrl('q')">Quilling</button></div>
+            <div class="col-sm-2"><button type="button" class="btn btn-primary" ng-click="ctrl.listctrl('d')">Digital</button></div>
+            <div class="col-sm-2"><button type="button" class="btn btn-primary" ng-click="ctrl.listctrl('A')">AllArt</button></div>
 
         </div>
            <!-- <div class = "col-xs-4 w3-white">            <div ng-show="ctrl.selected">Currently Viewed: {{ ctrl.selected }}</div>
@@ -51,7 +52,7 @@
             </h3>
         </div>
         <div class="modal-body w3-black" >
-            <ul><!--
+            <div><!--
                 <li ng-repeat="item in ctrl.artitems">
                     <a href="#" ng-click="$event.preventDefault(); ctrl.selected.item = item">
                         {{ctrl.id}}
@@ -63,7 +64,7 @@
                 <img id="show" src="{{ctrl.artitems[ctrl.id]}}" >
                 <button id="next" class="navbttn" ng-click="ctrl.next()"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
 
-            </ul>
+            </div>
 
         </div>
         <div class="modal-footer">
@@ -83,22 +84,8 @@
                     </div>
                     </div>
                 </div>
-        <div  class = " col-sm-4 nopadding" ng-repeat="x in ctrl.artitems">
-            <div class=" frame-square " ng-click="ctrl.open('Artmodal.html',$index)">
-                <div class="crop">
 
-                    <img class="art" src={{x}}>
-                </div>
-            </div>
-        </div>
-        <div  class = " col-sm-4 nopadding" ng-repeat="x in ctrl.artitems">
-            <div class=" frame-square " ng-click="ctrl.open('Artmodal.html',$index)">
-                <div class="crop">
 
-                    <img class="art" src={{x}}>
-                </div>
-            </div>
-        </div>
     </div>
 
     <br>
