@@ -14,6 +14,11 @@
                         templateUrl: "views/resume/resume.html",
                         controller: "ResumeController"
                     })
+                .when("/projects",
+                    {
+                        templateUrl: "views/projects/projects.html",
+                        controller: "ResumeController"
+                    })
                 .when("/art",
                     {
                         templateUrl: "views/art/art.html",
