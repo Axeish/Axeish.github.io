@@ -37,7 +37,7 @@
         ctrl.quillitem = [
             "https://lh3.googleusercontent.com/h9W4EA0ciMKbabtEItANwQzqBaIVdxg0zJ5ilr_rv93rJHWyvaE-wIflUV3kgcRUD2s3O68qoYaMFaF09M30neoS98q_BWypPCQwpW08zBXk9b6H3FKSBVsb9KlORuAZgq1EEQ",
             "https://lh3.googleusercontent.com/v7Vs1nZQRj8JAqTJxNhBb04ufBJdYVvEIxY49XsbkxePrniI1sdP04pmXUjvQm5TM1-YErvYpKR5-PJUbKRITcWsAj_1RHCke72qxF2paDqyNfnJadODsOV8IyPxma5jCT43jg",
-            "https://lh3.googleusercontent.com/6KZIxpaJiinEbIcCeWkAirrUFHwmy-LYzVN-pg491MU9jXrzit-JxRK-Nwjohdus34weVhGG5AcfiQ6z8NaZNbq3VG6T7VJFsVFSrqBYEUoFEoN0ymTmaLx5RoP3yCUOIvpqXA",
+
             "https://lh3.googleusercontent.com/UBiGugpUh-2XmmSBIVb3Yn-H9F0OItbaFp5QvTBLcgZ7yEAfIZZ6dXMtqn9PMAoncgeBUmr_RKD5C335lnlyhr2_QjXu7cTUc19A2icvLPqs1i5A6YYwsBCFStL5bLxt73UKUw",
             "https://lh3.googleusercontent.com/WGzIMa8VSfmXhCKTnM6yP027PN6m89mVmPcaitwmutGrU3aK5hsXCgIuf2mDTTVAjaWgOS2qNql7hwxFEEUkBnMRie2YonWMM6M1T_s4ENK4UGgn98FspoBsJe_i_2uhmE0vAA",
             "https://lh3.googleusercontent.com/pDRdQJXo70Xu3MNBjC0DQivc52tVUnT8k4FHJhecgclkAkSo05VRvh_JxOtAjlK-lxaJ3j1pA7iQvMY8ur4mFsSyL03GLsZ6N-F3J6sCDp9bZoa55YQE7Jl5TjCX9I9x_SRjaA",

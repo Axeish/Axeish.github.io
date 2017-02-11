@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <section >
-        <div class="row">
+        <div class="row center-full">
             <div class="col-sm-4"><button type="button" class="btn btn-primary" ng-click="ctrl.open('myModalContent.html')">Artist Journey</button></div>
             <div class="col-sm-2"><button type="button" class="btn btn-primary" ng-click="ctrl.listctrl('f')">Folkish</button></div>
             <div class="col-sm-2"><button type="button" class="btn btn-primary" ng-click="ctrl.listctrl('q')">Quilling</button></div>
@@ -47,9 +47,11 @@
     <!-- Scripts-->
     <script type="text/ng-template" id="Artmodal.html">
         <div class="modal-header">
+            <button class="btn btn-warning closae" type="button" ng-click="ctrl.cancel()">X</button>
             <h3 class="modal-title" >
               {{ctrl.arttitle}}
             </h3>
+
         </div>
         <div class="modal-body w3-black" >
             <div><!--
@@ -60,16 +62,19 @@
                         <img src="{{ ctrl }}"></a>
 
                 </li>-->
-                <button id="prev" class="navbttn" ng-click="ctrl.prev()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
+                <button id="prev" class="navbttn" ng-click="ctrl.prev()"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                <button id="prev" class="navbttn" ng-click="ctrl.prev()"><i class="fa fa-random" aria-hidden="true"></i></button>
+                <button id="next" class="navbttn" ng-click="ctrl.next()"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                <br>
                 <img id="show" src="{{ctrl.artitems[ctrl.id]}}" >
-                <button id="next" class="navbttn" ng-click="ctrl.next()"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+
 
             </div>
 
         </div>
         <div class="modal-footer">
-            <button class="btn btn-primary" type="button" ng-click="ctrl.ok()">Close</button>
-            <button class="btn btn-warning" type="button" ng-click="ctrl.cancel()">Cancel</button>
+
+
         </div>
     </script>
 

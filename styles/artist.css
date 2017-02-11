@@ -64,3 +64,14 @@ small {
 #show{
     width:80%;
 }
+
+.closae{
+    float: right
+}
+.center-full{
+    text-align: center;
+
+}
+.center-full .btn{
+    width:100%
+}
