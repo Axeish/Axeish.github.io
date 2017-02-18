@@ -1,0 +1,11 @@
+.project-desc{
+    height: 180px;
+    overflow:scroll;
+}
+
+.proj-img{
+    margin: 0px 0px -20px 0px;
+    padding: 5px;
+    border: 5px solid rgba(255,255,255,1);
+    border-radius: 10px;
+}
